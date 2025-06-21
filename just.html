@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product Feedback Survey</h1>
+        <form id="surveyForm">
+            <div class="survey">
+                <div>
+                    <label for="username"><span class="user-span">Username:</span></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div>
+                    <label for="age"><span class="user-span">Age:</span></label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div>
+                    <label for="address"><span class="user-span">Address:</span></label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div>
+                    <label for="contact"><span class="user-span">Contact Number:</span></label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+            </div>
+            <div class="box">
+                <h3>1. How satisfied are you with our product?</h3>
+                <label><input type="radio" name="satisfaction" value="1" required> Very Dissatisfied</label>
+                <label><input type="radio" name="satisfaction" value="2"> Dissatisfied</label>
+                <label><input type="radio" name="satisfaction" value="3"> Neutral</label>
+                <label><input type="radio" name="satisfaction" value="4"> Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="5"> Very Satisfied</label>
+
+                <h3>2. What features do you like the most? (Select all that apply)</h3>
+                <label><input type="checkbox" name="features" value="Quality"> Quality</label>
+                <label><input type="checkbox" name="features" value="Price"> Price</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+                <label><input type="checkbox" name="features" value="Support"> Customer Support</label>
+
+                <h3>3. Please provide any additional feedback:</h3>
+                <textarea name="feedback" id="feedback" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="scoreDisplay" class="score-display"></div>
+    </div>
+
+    <script src="jov.js"></script>
+</body>
+
+</html>
